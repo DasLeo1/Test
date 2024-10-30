@@ -16,10 +16,15 @@ public final class Test extends JavaPlugin {
         getLogger().info("All System`s loaded");
         try {
             //TODO load system
+
+            new Hausaufgabe().hausaufgabe(1);
+            new Hausaufgabe().hausaufgabe(2);
+
             getLogger().log(Level.INFO, "All System`s loaded");   //Alles super
         } catch (Exception e) {
             getLogger().log(Level.WARNING, "System failed to load", e);  //Nix gut
         }
+
     }
 
     @Override
