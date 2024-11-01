@@ -13,6 +13,7 @@ public final class Test extends JavaPlugin {
 
 
 
+        //kann ignoriert werden
         new Display(getLogger())
                 .display();
 
@@ -20,7 +21,7 @@ public final class Test extends JavaPlugin {
 
         //Aufgabe 1
         TaskA homeworka = new TaskA();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
         homeworka.homeworka(getLogger() , prefix , i);
         }
 
@@ -33,6 +34,20 @@ public final class Test extends JavaPlugin {
         getLogger().info(" ");//Platzhalter
 
         //Aufgabe 3
+        TaskC homeworkc = new TaskC();
+        homeworkc.homeworkc(getLogger() , prefix);
+
+        getLogger().info(" ");//Platzhalter
+
+        //Aufgabe4
+        TaskD homeworkd = new TaskD();
+        homeworkd.homeworkd(getLogger() , prefix);
+
+        getLogger().info(" ");//Platzhalter
+
+        //Aufgabe5
+        TaskE homeworke = new TaskE();
+        homeworke.homeworke(getLogger() , prefix);
 
 
         try {

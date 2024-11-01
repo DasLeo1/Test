@@ -6,7 +6,7 @@ public class TaskA {
 
     public void homeworka(Logger logger, String string, int a) {
         logger.info(string + "A");
-        if (a != 7) {
+        if (a != 3) {
             logger.info("Trigger = " + a);
         } else {
             logger.info("Huch kenn ich nicht");
