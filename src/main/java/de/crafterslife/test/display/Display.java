@@ -9,7 +9,15 @@ public class Display {
         this.logger = logger;
     }
 
-    public void display() {
+    public void show() {
+        logger.info("\uD83D\uDE02");
+        logger.info("\uD83D\uDE02");
+        logger.info("\uD83D\uDE02");
+
+
+
+    }
+    public void show2() {
         logger.info("\uD83D\uDE02");
         logger.info("\uD83D\uDE02");
         logger.info("\uD83D\uDE02");

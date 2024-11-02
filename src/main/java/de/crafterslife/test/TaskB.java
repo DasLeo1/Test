@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 public class TaskB {
 
-    public void homeworkb(Logger logger, String string) {
+    public void homeworkB(Logger logger, String string) {
         logger.info(string + "B");
 
 

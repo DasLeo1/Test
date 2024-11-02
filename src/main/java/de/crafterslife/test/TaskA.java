@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 public class TaskA {
 
-    public void homeworka(Logger logger, String string, int a) {
+    public void homeworkA(Logger logger, String string, int a) {
         logger.info(string + "A");
         if (a != 3) {
             logger.info("Trigger = " + a);

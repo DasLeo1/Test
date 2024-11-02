@@ -1,6 +1,7 @@
 package de.crafterslife.test;
 
 import de.crafterslife.test.display.Display;
+import de.crafterslife.test.packag.one;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Level;
@@ -14,40 +15,46 @@ public final class Test extends JavaPlugin {
 
 
         //kann ignoriert werden
-        new Display(getLogger())
-                .display();
+        Display hologram = new Display(getLogger());
+        hologram.show();
+        hologram.show2();
 
         getLogger().log(Level.INFO, "-------" + getName() + "-------");
 
         //Aufgabe 1
-        TaskA homeworka = new TaskA();
+        TaskA homeworkA = new TaskA();
         for (int i = 0; i < 3; i++) {
-        homeworka.homeworka(getLogger() , prefix , i);
+        homeworkA.homeworkA(getLogger() , prefix , i);
         }
 
         getLogger().info(" ");//Platzhalter
 
         //Aufgabe 2
-        TaskB homeworkb = new TaskB();
-        homeworkb.homeworkb(getLogger() , prefix);
+        TaskB homeworkB = new TaskB();
+        homeworkB.homeworkB(getLogger() , prefix);
 
         getLogger().info(" ");//Platzhalter
 
         //Aufgabe 3
-        TaskC homeworkc = new TaskC();
-        homeworkc.homeworkc(getLogger() , prefix);
+        TaskC homeworkC = new TaskC();
+        homeworkC.homeworkC(getLogger() , prefix);
 
         getLogger().info(" ");//Platzhalter
 
         //Aufgabe4
-        TaskD homeworkd = new TaskD();
-        homeworkd.homeworkd(getLogger() , prefix);
+        TaskD homeworkD = new TaskD();
+        homeworkD.homeworkD(getLogger() , prefix);
 
         getLogger().info(" ");//Platzhalter
 
         //Aufgabe5
-        TaskE homeworke = new TaskE();
-        homeworke.homeworke(getLogger() , prefix);
+        TaskE homeworkE = new TaskE();
+        homeworkE.homeworkE(getLogger() , prefix);
+
+        getLogger().info(" ");
+
+        one one1 = new one();
+        one1.foo(getLogger() , prefix);
 
 
         try {
